@@ -1,1 +1,4 @@
 .idea/
+personal_data/
+venv/
+.venv/
