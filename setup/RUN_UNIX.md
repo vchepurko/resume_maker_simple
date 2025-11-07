@@ -11,10 +11,20 @@ It creates a local virtual environment (`.venv/`), installs required libraries, 
 1. Put `setup.command` in the project root (same folder as your `resume.py`).
 2. In Finder, right-click `setup.command` → Open.  
    - If Gatekeeper warns about an “unidentified developer”, use **System Settings → Privacy & Security → Allow Anyway**, then right-click → **Open** again.
-3. If the file does nothing when double-clicked, ensure it is executable:
-   ```bash
-   chmod +x setup.command
-   ```
+
+   - 1 — Enable the “New Terminal at Folder” option. If “New Terminal at Folder” is not available:
+     1. Open System Settings → Keyboard → Keyboard Shortcuts → Services.
+     2. Scroll to the Files and Folders section.
+     3. Enable New Terminal at Folder (and optionally “New Terminal Tab at Folder”).
+   - 2 — Open terminal
+     1. Locate your setup.command file in Finder (for example, in Downloads or your project folder).
+     2. Right-click the folder background (not the file itself).
+     3. Choose: Services → New Terminal at Folder (If you don’t see this option, see note below.)
+     4. A Terminal window will open in that exact directory.
+     5. Add to reminal text and enter, after that you can open setup.command by double click.
+          ```bash
+          chmod +x setup.command
+          ```
 4. The script will:
    - Check for Python 3 (you can install it with Homebrew: `brew install python`).
    - Create `.venv/`.
